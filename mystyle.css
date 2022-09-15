@@ -1,19 +1,96 @@
 body{
-    font-family:'Times New Roman';
+    font-family: 'Roboto', sans-serif;
     font-size:x-large;
-    background-color:black;
+    background-color:rgb(75, 83, 94);
     color: white;
 }
 h1,h2{
-    text-align: center;
+    text-align:center;
 }
 p{
-    text-align: justify;
-    line-height: 2;
+    text-align:left;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+    color:white; 
+}
+img{
+    max-width: 100%;
+}
+/*utilities*/
+.btn{
+    display: block;
+    background-color: #222222;
+    color:white;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 10px;
+}
+.btn-small{
+    width: 150px;
+    font-size: 18px;
+    margin-left: 22%;
+    margin-right: 22%;
+}
+.btn:hover{
+    color:rgb(255, 255, 255);
+    border-left: 25px solid #dfddd6;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*header*/
+header.site-header{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100vh;
+}
+.my-photo{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 10px solid #ffffff; 
+    padding: 3px;
+    opacity: 1.0;
 }
 
+/*menu*/
+.menu-social{
+    text-align: center;
+    margin-top: 30px;
+}
+.menu-social i{
+    font-size: 30px;
+    margin-right: 20px;
+}
+.fa-linkedin{
+    color:#012768
+}
+.fa-youtube.com{
+    color:rgb(177, 0, 0)
+}
+.fa-researchgate{
+    color:rgb(8, 156, 106)
+}
 /*main*/
-
+main.site-main{
+    flex-basis: 70%;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
 .title-greeting{
     text-transform: uppercase;
     font-weight: bold;
@@ -22,7 +99,35 @@ p{
 .title-name{
     text-transform: uppercase;
     font-weight: bold;
-    color:rgb(180, 62, 62);
+    color:white;
     font-size: 22px;
+}
+.title-name span{
+    color:white;
+}
+/*education*/
+.box{
+    background-color: #2e2e2e;
+    width: 500px;
+    padding: 10px;
+    margin: 30px;
+}
+.degree-header{
+    display: flex;
+    align-items: center;
+}
+.degree-headeri{
+    border: 2x solid #ffcc00;
+    border-radius: 50%;
+    padding: 10px;
+}
+.box p{
+    font-size: 14px;
+}
+.degree-title{
+    text-transform: uppercase;
+    color:#ffcc00;
+    word-spacing: 3;
+    font-weight: 300;
 }
 
